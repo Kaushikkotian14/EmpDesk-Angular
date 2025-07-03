@@ -1,0 +1,84 @@
+<div class="employee-container" style="display: flex; gap: 32px; margin-top: 40px;margin-left: 100px;">
+   
+    <div style="flex: 1; max-width: 480px; margin-bottom: 40px;">
+        <mat-card class="mat-elevation-z4" style="background: rgba(0,0,0,0.5); color: #fcfcfc;">
+            <mat-card-header style="background-color: rgb(83, 83, 252);">
+                <mat-card-title>
+                    <span style="color: #fff;">Enter Employee Details</span>
+                </mat-card-title>
+            </mat-card-header><br>
+            <mat-card-content>
+                <form #form="ngForm">
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Name</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.name" name="name" placeholder="Enter name" required autofocus>
+                    </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" [(ngModel)]="employee.email" name="email" placeholder="Enter email" required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Role</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.role" name="role" placeholder="Enter role" required>
+                    </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Designation</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.designation" name="designation" placeholder="Enter designation" required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Phone</mat-label>
+                        <input matInput type="tel" pattern="[0-9]{12,}" [(ngModel)]="employee.phone" name="phone" placeholder="Enter phone" required>
+                    </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Address</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.address" name="address" placeholder="Enter address" required>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="w-100 mb-3">
+                        <mat-label>Date of Joining</mat-label>
+                        <input matInput [matDatepicker]="picker" [(ngModel)]="employee.doj" name="doj" required>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+
+                    <div class="mb-3" style="margin-bottom: 16px;">
+                        <label style="margin-bottom: 8px; display: block;">Upload Image</label>
+                        <input type="file" (change)="onImageSelected($event)" required>
+                    </div>
+
+                    <div>
+                        <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Save</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    
+    <div style="flex: 1; min-width: 350px; display: flex; align-items: center; justify-content: center;">
+        <mat-card class="mat-elevation-z4" style="width: 100%; max-width: 480px; background: rgba(0,0,0,0.8); color: #fff;">
+            <mat-card-header style="display: flex; flex-direction: column; align-items: center;background-color: rgb(83, 83, 252);">
+                <img *ngIf="employee.img" [src]="employee.img" alt="Employee Image" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-bottom: 12px;">
+            </mat-card-header><br>
+            <mat-card-content style="font-size: 1.15rem;">
+                <h5 style="font-size: 1.3rem;"><strong>Name:</strong> {{ employee.name }}</h5>
+                <p><strong>Email:</strong> {{ employee.email }}</p>
+                <p><strong>Role:</strong> {{ employee.role }}</p>
+                <p><strong>Designation:</strong> {{ employee.designation }}</p>
+                <p><strong>Phone:</strong> {{ employee.phone }}</p>
+                <p><strong>Address:</strong> {{ employee.address }}</p>
+                <p><strong>Joining Date:</strong> {{ employee.doj | date:'dd/MM/yyyy' }} </p>
+                <div style="display: flex; gap: 12px; justify-content: center; margin-top: 24px;">
+                    <button mat-raised-button color="accent">Edit</button>
+                    <button mat-raised-button color="primary">Chat</button>
+                    <button mat-raised-button color="warn">Delete</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

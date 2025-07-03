@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" style="box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assets/logo.png" alt="Employee Database Logo" width="68" height="48" style="margin-right: 20px; border-radius: 8px; background: #fff;">
+    <span style="font-size: 1.5rem; font-weight: 600; letter-spacing: 1px;">EmpDesk</span>
+    <span style="flex: 1 1 auto;"></span>
+    <nav>
+        <a mat-button routerLink="employee" style="font-weight: 500; margin: 0 4px; font-size: 1.1rem;">Employee</a>
+        <!-- <a mat-button routerLink="project" style="font-weight: 500; margin: 0 4px; font-size: 1.1rem;">Projects</a> -->
+        <a mat-button routerLink="login" style="font-weight: 500; margin: 0 4px; font-size: 1.1rem;">Login</a>
+        <a mat-button routerLink="aboutUs" style="font-weight: 500; margin: 0 4px; font-size: 1.1rem;">About Us</a>
+        <a mat-button routerLink="contactUs" style="font-weight: 500; margin: 0 4px; font-size: 1.1rem;">Contact Us</a>
+    </nav>
+</mat-toolbar>
+<router-outlet></router-outlet>

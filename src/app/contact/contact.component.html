@@ -1,0 +1,42 @@
+<div class="mat-elevation-z4" style="max-width: 400px; margin: 40px auto; background: #f9f9f9; padding: 32px; border-radius: 12px;">
+    <h2 style="color: #1976d2; text-align: center; margin-bottom: 24px;">Contact Us</h2>
+    <form #contactForm="ngForm" autocomplete="off" (ngSubmit)="feedback()">
+        <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 18px;">
+            <mat-label>Name</mat-label>
+            <input matInput id="name" type="text" name="name" ngModel required autofocus />
+            <mat-error *ngIf="contactForm.submitted && contactForm.controls?.['name']?.invalid">
+                Name is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 18px;">
+            <mat-label>Email</mat-label>
+            <input matInput id="email" type="email" name="email" ngModel required email />
+            <mat-error *ngIf="contactForm.submitted && contactForm.controls?.['email']?.invalid">
+                <span *ngIf="contactForm.controls?.['email']?.errors?.['required']">
+                    Email is required.
+                </span>
+                <span *ngIf="contactForm.controls?.['email']?.errors?.['email']">
+                    Enter a valid email address.
+                </span>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 24px;">
+            <mat-label>Message</mat-label>
+            <textarea matInput id="message" name="message" ngModel required rows="3"></textarea>
+            <mat-error *ngIf="contactForm.submitted && contactForm.controls?.['message']?.invalid">
+                Message is required.
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid" style="width: 100%;">
+            Send Message
+        </button>
+    </form>
+    <div style="margin-top: 1rem; text-align: center; color: #1976d2;">{{ msg }}</div>
+    <div style="margin-top: 1rem; text-align: center;">
+        <span>Or email us at</span>
+        <a href="mailto:info@godigital.com" style="font-weight: bold; text-decoration: none; color: #1976d2;">&nbsp;contact@godigitaltc.com</a>
+    </div>
+</div>

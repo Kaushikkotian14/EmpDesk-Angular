@@ -1,0 +1,21 @@
+.footer-container {
+    background: #6c6b6b;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+}
+.footer-content p {
+    margin: 0;
+}
+.footer-links {
+    margin-top: 12px;
+}
+.footer-links a {
+    color: #90caf9;
+    text-decoration: none;
+    margin: 0 8px;
+}
+.footer-links span {
+    color: #fff;
+    margin: 0 4px;
+}

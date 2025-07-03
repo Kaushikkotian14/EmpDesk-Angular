@@ -1,0 +1,75 @@
+<h2 mat-dialog-title>Edit Employee</h2>
+<mat-dialog-content>
+  <form [formGroup]="employeeForm" class="edit-form">
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" required>
+      <mat-error *ngIf="employeeForm.get('name')?.hasError('required')">
+        Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" required>
+      <mat-error *ngIf="employeeForm.get('email')?.hasError('required')">
+        Email is required
+      </mat-error>
+      <mat-error *ngIf="employeeForm.get('email')?.hasError('email')">
+        Please enter a valid email
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Role</mat-label>
+      <input matInput formControlName="role" required>
+      <mat-error *ngIf="employeeForm.get('role')?.hasError('required')">
+        Role is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Designation</mat-label>
+      <input matInput formControlName="designation" required>
+      <mat-error *ngIf="employeeForm.get('designation')?.hasError('required')">
+        Designation is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone" required>
+      <mat-error *ngIf="employeeForm.get('phone')?.hasError('required')">
+        Phone is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Address</mat-label>
+      <textarea matInput formControlName="address" rows="3" required></textarea>
+      <mat-error *ngIf="employeeForm.get('address')?.hasError('required')">
+        Address is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Joining Date</mat-label>
+      <input matInput formControlName="doj" type="date" required>
+      <mat-error *ngIf="employeeForm.get('doj')?.hasError('required')">
+        Joining date is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Image URL</mat-label>
+      <input matInput formControlName="img">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSave()" [disabled]="!employeeForm.valid">
+    Save Changes
+  </button>
+</mat-dialog-actions>

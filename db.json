@@ -1,0 +1,136 @@
+{
+  "Employee": [
+    {
+      "id": "e01",
+      "name": "Ravi",
+      "email": "kaushik.kotian@godigitaltc.com",
+      "role": "Full Stack Developer",
+      "designation": "Senior Full Stack Developer",
+      "phone": "9876543210",
+      "address": "123 MG Road, Bengaluru, Karnataka",
+      "doj": "2022-01-15",
+      "img": "assets/img1.png"
+    },
+    {
+      "id": "e02",
+      "name": "Priya Singh",
+      "email": "priya.singh@com",
+      "role": "Full Stack Developer",
+      "designation": "Junior Full Stack Developer",
+      "phone": "9123456780",
+      "address": "456 Park Street, Mumbai, Maharashtra",
+      "doj": "2021-09-10",
+      "img": "assets/img2.png"
+    },
+    {
+      "id": "e03",
+      "name": "Mayank Wadhwani",
+      "email": "simran.dung@godigitaltc.com",
+      "role": "Full Stack Developer",
+      "designation": "Lead Full Stack Developer",
+      "phone": "9988776655",
+      "address": "789 Green Avenue, Pune, Maharashtra",
+      "doj": "2020-12-01",
+      "img": "assets/img3.png"
+    },
+    {
+      "id": "e04",
+      "name": "Sneha Patil",
+      "email": "sneha.patil@com",
+      "role": "Data Engineer",
+      "designation": "Junior Data Engineer",
+      "phone": "9871234567",
+      "address": "123 Green Avenue, Pune, Maharashtra",
+      "doj": "2023-01-20",
+      "img": "assets/img4.png"
+    },
+    {
+      "id": "e05",
+      "name": "Vikas Gupta",
+      "email": "vikas.gupta@com",
+      "role": "Data Engineer",
+      "designation": "Senior Data Engineer",
+      "phone": "919812345678",
+      "address": "789 Blue Road, Delhi",
+      "doj": "2019-07-05",
+      "img": "assets/img5.png"
+    },
+    {
+      "id": "e06",
+      "name": "Meera Nair",
+      "email": "meera.nair@com",
+      "role": "Data Engineer",
+      "designation": "Data Engineer",
+      "phone": "919900112233",
+      "address": "321 Lake View, Ahmedabad, Gujarat",
+      "doj": "2022-11-30",
+      "img": "assets/img6.png"
+    },
+    {
+      "id": "e07",
+      "name": "Rohit Deshmukh",
+      "email": "rohit.deshmukh@com",
+      "role": "Human Resource",
+      "designation": "HR Executive",
+      "phone": "9823456789",
+      "address": "12 Lotus Colony, Nagpur, Maharashtra",
+      "doj": "2021-03-18",
+      "img": "assets/img1.png"
+    },
+    {
+      "id": "e08",
+      "name": "Ankita Joshi",
+      "email": "ankita.joshi@com",
+      "role": "Human Resource",
+      "designation": "HR Manager",
+      "phone": "9812345678",
+      "address": "34 Rose Park, Jaipur, Rajasthan",
+      "doj": "2020-08-25",
+      "img": "assets/img2.png"
+    },
+    {
+      "id": "e09",
+      "name": "Suresh Kumar",
+      "email": "suresh.kumar@com",
+      "role": "Human Resource",
+      "designation": "HR Coordinator",
+      "phone": "9876543201",
+      "address": "56 Lake Road, Chennai, Tamil Nadu",
+      "doj": "2022-05-10",
+      "img": "assets/img3.png"
+    },
+    {
+      "id": "e10",
+      "name": "Deepak Reddy",
+      "email": "deepak.reddy@com",
+      "role": "Devops Engineer",
+      "designation": "Lead Devops Engineer",
+      "phone": "9845123456",
+      "address": "78 Tech Park, Hyderabad, Telangana",
+      "doj": "2021-11-12",
+      "img": "assets/img5.png"
+    },
+    {
+      "id": "e11",
+      "name": "Kavya Iyer",
+      "email": "kavya.iyer@com",
+      "role": "Devops Engineer",
+      "designation": "Senior Devops Engineer",
+      "phone": "9834567890",
+      "address": "90 Sunrise Avenue, Kochi, Kerala",
+      "doj": "2020-06-22",
+      "img": "assets/img4.png"
+    },
+    {
+      "id": "e12",
+      "name": "Arjun Pandey",
+      "email": "arjun.pandey@com",
+      "role": "Devops Engineer",
+      "designation": "Junior Devops Engineer",
+      "phone": "9823456701",
+      "address": "23 River Side, Lucknow, Uttar Pradesh",
+      "doj": "2022-10-05",
+      "img": "assets/img1.png"
+    }
+  ]
+}

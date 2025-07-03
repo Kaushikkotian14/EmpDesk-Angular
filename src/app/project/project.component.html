@@ -1,0 +1,40 @@
+<div class="project-container" style="max-width: 500px; margin: auto;">
+    <h2>Create Project</h2>
+    <form #projectForm="ngForm">
+        <mat-form-field appearance="fill" class="w-100">
+            <mat-label>Project Name</mat-label>
+            <input matInput id="projectName" name="projectName" ngModel required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-100">
+            <mat-label>Description</mat-label>
+            <textarea matInput id="projectDesc" name="projectDesc" ngModel></textarea>
+        </mat-form-field>
+
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <mat-form-field appearance="fill" style="flex: 1;">
+                <mat-label>Add Employee</mat-label>
+                <input matInput id="employee" name="employee" [(ngModel)]="employeeName">
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="button" (click)="addEmployee()">
+                Add
+            </button>
+        </div>
+
+        <div *ngIf="employees && employees.length">
+            <h3>Employees</h3>
+            <mat-list>
+                <mat-list-item *ngFor="let emp of employees; let i = index">
+                    {{ emp }}
+                    <button mat-icon-button color="warn" type="button" (click)="removeEmployee(i)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-list-item>
+            </mat-list>
+        </div>
+
+        <button mat-raised-button color="accent" type="submit" (click)="createProject()">
+            Create Project
+        </button>
+    </form>
+</div>

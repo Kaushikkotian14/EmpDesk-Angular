@@ -1,0 +1,91 @@
+<div class="mat-elevation-z4 about-container"
+    style="background: rgba(0,0,0,0.85); color: #fff; padding: 0.5rem; min-height: 60vh; margin: 0; display: flex; align-items: center; justify-content: center;">
+    <div class="about-content"
+        fxLayout="column"
+        fxLayoutAlign="center stretch"
+        fxLayoutGap="32px"
+        style="width: 100%; max-width: 1100px; margin: 0 auto;">
+
+       <section style="text-align: center; margin-bottom: 1.5rem; margin-top: 1.5rem;">
+          <h1 class="mat-display-2 mat-primary" style="margin-bottom: 1rem;">Go Digital Technology Consulting</h1>
+          <p class="mat-subheading-2" style="color: #a2dffb;">
+             A Niche Technology Consulting Services Focused on
+             <br>
+             <strong>Data Engineering • Application Development • Data Science • Generative AI</strong>
+             <br>
+             to Accelerate Your Business
+          </p>
+       </section>
+
+       <section style="max-width: 900px; margin: 0 auto;">
+          <h2 class="mat-headline mat-primary" style="margin-bottom: 0.5rem;color: #a2dffb;">Who Are We</h2>
+          <p style="text-align: justify;">
+             We are a boutique digital transformation consultancy and development company.
+             <br><br>
+             Go Digital Technology Consulting specializes in data-driven consulting and technology services. We leverage the latest in cloud technology to empower clients to lead in their industries with superior data products. We participate in digital transformation of Fortune 1000 companies in North America and the Middle East.
+             <br><br>
+             Our work is not just about technology; it’s about shaping the future of digital landscapes through meaningful solutions. A trusted professional service firm offering Digital transformation, Data Engineering and Big Data Analytics consulting solutions, we are dedicated to helping our clients achieve success by transforming the vast amounts of data into actionable insights and information.
+             <br><br>
+             We stand firm in our belief that our expertise uniquely positions us to assist you in consolidating and organizing both structured and unstructured data, providing a clear understanding of your enterprise's current state, its needs for growth, and the path to achieving those goals.
+             <br><br>
+             At our company, we go beyond mere data analysis; we're committed to driving meaningful change with every solution we craft, ensuring that we're not just participants in the digital landscape but active architects of its evolution.
+          </p>
+       </section>
+
+    <section>
+        <h2 class="mat-headline mat-primary" style="margin-bottom: 0.5rem;color: #a2dffb; text-align: center;">Why Choose Us</h2>
+        <mat-grid-list cols="3" rowHeight="0.5:0.5" gutterSize="14px">
+            <mat-grid-tile *ngFor="let item of [
+                {title: 'Proven Track Record', desc: '250+ projects delivered.'},
+                {title: 'Decade Of Success', desc: 'Nearly ten years of excellence.'},
+                {title: 'Global Partnerships', desc: 'Worldwide collaborations.'},
+                {title: 'Specialized Expertise', desc: 'Niche, focused skills.'},
+                {title: 'Innovative Frameworks', desc: 'Modern architecture.'},
+                {title: 'Best Practices', desc: 'Industry methodologies.'},
+                {title: 'Personalized Approach', desc: 'Tailored solutions.'},
+                {title: 'Collaborative Partnership', desc: 'Close client work.'},
+                {title: 'Corporate Culture', desc: 'Strong values.'}
+            ]">
+                <mat-card style="width: 70%; height: 70%; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #0a3a6a; color: #a2dffb;">
+                    <mat-card-title style="font-weight: bold;">{{item.title}}</mat-card-title>
+                    <mat-card-content>
+                        <p>{{item.desc}}</p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </section>
+
+       <section>
+          <h2 class="mat-headline mat-primary" style="margin-bottom: 0.5rem;color: #a2dffb; text-align: center;">Our Proven Domains</h2>
+          <p style="text-align: center;">Best Practices From Industry Experts</p>
+          <div fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="24px">
+             <div fxFlex="30" style="min-width: 250px; text-align: center;">
+                <strong>Capital Markets</strong>
+                <p style="text-align: justify;">
+                    As a digital transformation IT services company, we specialize in developing cutting-edge solutions that can help businesses in the capital markets industry stay ahead of the curve. Our team of experts has deep domain knowledge in this field and can help you develop advanced trading algorithms using AI and machine learning, optimize risk management processes with big data analytics, and leverage cloud computing to scale your infrastructure.
+                    <br>
+                    By partnering with us, you can gain a competitive advantage in the fast-paced and constantly evolving world of capital markets.
+                </p>
+             </div>
+             <div fxFlex="30" style="min-width: 250px; text-align: center;">
+                <strong>Insurance</strong>
+                <p style="text-align: justify;">
+                    In the insurance industry, data analytics and digital technologies are transforming how companies assess risk, personalize offerings, and streamline operations.
+                </p>
+             </div>
+             <div fxFlex="30" style="min-width: 250px; text-align: center;">
+                <strong>Electric Power & Gas Energy</strong>
+                <p style="text-align: justify;">
+                    The energy and utilities industry is facing numerous challenges and opportunities. We help organizations leverage data and digital solutions to optimize operations and drive innovation.
+                </p>
+             </div>
+          </div>
+       </section>
+
+       <section style="text-align: center; margin-top: 2rem;">
+          <h2 class="mat-headline mat-primary" style="margin-bottom: 0.5rem;color: #a2dffb;">Focus on Your Business</h2>
+          <p>We Take Care of Your Technology</p>
+       </section>
+    </div>
+</div>
