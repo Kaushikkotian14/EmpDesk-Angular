@@ -2,13 +2,13 @@
   "Employee": [
     {
       "id": "e01",
-      "name": "Ravi",
+      "name": "Kaushik",
       "email": "kaushik.kotian@godigitaltc.com",
       "role": "Full Stack Developer",
-      "designation": "Senior Full Stack Developer",
+      "designation": "Intern",
       "phone": "9876543210",
-      "address": "123 MG Road, Bengaluru, Karnataka",
-      "doj": "2022-01-15",
+      "address": "123 MG Road, Mumbai, Maharshtra",
+      "doj": "2025-06-09",
       "img": "assets/img1.png"
     },
     {
@@ -131,6 +131,17 @@
       "address": "23 River Side, Lucknow, Uttar Pradesh",
       "doj": "2022-10-05",
       "img": "assets/img1.png"
+    },
+    {
+      "id": "a798",
+      "img": "assets/img5.png",
+      "name": "Mayank",
+      "email": "mayank.@gmail",
+      "role": "Full Stack Developer",
+      "designation": "Intern",
+      "phone": "1029383765",
+      "address": "mumbai",
+      "doj": "2025-07-16T18:30:00.000Z"
     }
   ]
 }

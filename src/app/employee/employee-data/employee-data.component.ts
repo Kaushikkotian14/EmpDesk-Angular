@@ -64,9 +64,16 @@ export class EmployeeDataComponent implements OnInit {
              emp.role!.toLowerCase().includes(searchTerm);
     });
 
-    this.roleList = [...new Set(filtered.map(emp => emp.role!))];
-    this.filteredEmployeesByRole = {};
     
+    this.roleList = [];
+    filtered.forEach(emp => {
+      if (emp.role && !this.roleList.includes(emp.role)) {
+      this.roleList.push(emp.role);
+      }
+    });
+
+    
+    this.filteredEmployeesByRole = {};
     this.roleList.forEach(role => {
       this.filteredEmployeesByRole[role] = filtered.filter(emp => emp.role === role);
     });
@@ -76,7 +83,7 @@ export class EmployeeDataComponent implements OnInit {
     if (confirm('Are you sure you want to delete this employee?')) {
       this.employeeService.deleteEmployee(employee.id!).subscribe(
         () => {
-          console.log('Employee deleted successfully');
+          alert('Employee deleted successfully');
           this.loadEmployees();
         },
         error => {
