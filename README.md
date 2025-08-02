@@ -25,4 +25,4 @@ Service-Oriented: Angular services handle all HTTP requests using HttpClient.
 
 📁 db.json:
 
-Contains a single employees array storing:
+Contains a single employees array storing
