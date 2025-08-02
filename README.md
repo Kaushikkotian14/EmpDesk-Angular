@@ -10,8 +10,7 @@ Backend: Mock backend using db.json (JSON Server)
 Architecture: Component-based with Angular services for data interaction
 
 📌 Description:
-EmpDesk is a single-page Angular application designed to manage employee data for an organization. It provides a <img width="868" height="365" alt="Screenshot 2025-08-02 203147" src="https://github.com/user-attachments/assets/a1b0ef90-b27b-4b46-8965-50611f3888d0" />
-responsive UI with Angular Material and simulates real backend interaction using db.json.
+EmpDesk is a single-page Angular application designed to manage employee data for an organization. It provides a responsive UI with Angular Material and simulates real backend interaction using db.json.
 
 ✅ Features:
 CRUD Operations: Add, update, delete, and view employee details.
