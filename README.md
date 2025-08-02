@@ -1,27 +1,27 @@
-# FinalAngularProject
+🧩 EmpDesk-Angular
+🔧 Tech Stack:
+Frontend: Angular 16
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+UI Framework: Angular Material
 
-## Development server
+Backend: Mock backend using db.json (JSON Server)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Architecture: Component-based with Angular services for data interaction
 
-## Code scaffolding
+📌 Description:
+EmpDesk is a single-page Angular application designed to manage employee data for an organization. It provides a responsive UI with Angular Material and simulates real backend interaction using db.json.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+✅ Features:
+CRUD Operations: Add, update, delete, and view employee details.
 
-## Build
+Live Search: Filter employees in real-time by name or role.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Teams Chat UI: A placeholder or mockup for team-based internal communication (non-functional or frontend-only).
 
-## Running unit tests
+Admin View: The application is openly accessible and pre-configured for one admin user (no login or role-based access).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Service-Oriented: Angular services handle all HTTP requests using HttpClient.
 
-## Running end-to-end tests
+📁 db.json:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contains a single employees array storing:
